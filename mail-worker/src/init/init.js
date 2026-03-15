@@ -163,7 +163,7 @@ const dbInit = {
 
 		const noticeContent = '本项目仅供学习交流，禁止用于违法业务\n' +
 			'<br>\n' +
-			'请遵守当地法规，作者不承担任何法律责任'
+			'请遵守当地法规，系统运营方不承担任何法律责任'
 
 		const ADD_COLUMN_SQL_LIST = [
 			`ALTER TABLE setting ADD COLUMN reg_verify_count INTEGER NOT NULL DEFAULT 1;`,
@@ -175,7 +175,7 @@ const dbInit = {
 				type INTEGER NOT NULL DEFAULT 0,
 				update_time DATETIME DEFAULT CURRENT_TIMESTAMP
       )`,
-			`ALTER TABLE setting ADD COLUMN notice_title TEXT NOT NULL DEFAULT 'Cloud Mail';`,
+			`ALTER TABLE setting ADD COLUMN notice_title TEXT NOT NULL DEFAULT 'PostLite';`,
 			`ALTER TABLE setting ADD COLUMN notice_content TEXT NOT NULL DEFAULT '';`,
 			`ALTER TABLE setting ADD COLUMN notice_type TEXT NOT NULL DEFAULT 'none';`,
 			`ALTER TABLE setting ADD COLUMN notice_duration INTEGER NOT NULL DEFAULT 0;`,
@@ -582,7 +582,7 @@ const dbInit = {
 			  INSERT INTO setting (
 				register, receive, add_email, many_email, title, auto_refresh, register_verify, add_email_verify
 			  )
-			  SELECT 0, 0, 0, 0, 'Cloud Mail', 0, 1, 1
+			  SELECT 0, 0, 0, 0, 'PostLite', 0, 1, 1
 			  WHERE NOT EXISTS (SELECT 1 FROM setting)
 			`).run();
 		} catch (e) {

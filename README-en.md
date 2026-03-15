@@ -1,25 +1,25 @@
 <p align="center">
     <img src="doc/demo/logo.png" width="80px" />
-    <h1 align="center">Cloud Mail</h1>
-    <p align="center">A simple, responsive email service designed to run on Cloudflare Workers 🎉</p> 
+    <h1 align="center">PostLite</h1>
+    <p align="center">An efficient email system crafted by the team, supporting sending and receiving emails 🎉</p> 
     <p align="center">
        <a href="/README.md" style="margin-left: 5px">简体中文</a> | English 
     </p>
     <p align="center">
-        <a href="https://github.com/maillab/cloud-mail/tree/main?tab=MIT-1-ov-file" target="_blank" >
+        <a href="https://github.com/postlite/postlite/tree/main?tab=MIT-1-ov-file" target="_blank" >
             <img src="https://img.shields.io/badge/license-MIT-green" />
         </a>    
-        <a href="https://github.com/maillab/cloud-mail/releases" target="_blank" >
-            <img src="https://img.shields.io/github/v/release/maillab/cloud-mail" alt="releases" />
+        <a href="https://github.com/postlite/postlite/releases" target="_blank" >
+            <img src="https://img.shields.io/github/v/release/postlite/postlite" alt="releases" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/issues" >
-            <img src="https://img.shields.io/github/issues/maillab/cloud-mail" alt="issues" />
+        <a href="https://github.com/postlite/postlite/issues" >
+            <img src="https://img.shields.io/github/issues/postlite/postlite" alt="issues" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/stargazers" target="_blank">
-            <img src="https://img.shields.io/github/stars/maillab/cloud-mail" alt="stargazers" />
+        <a href="https://github.com/postlite/postlite/stargazers" target="_blank">
+            <img src="https://img.shields.io/github/stars/postlite/postlite" alt="stargazers" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/forks" target="_blank" >
-            <img src="https://img.shields.io/github/forks/maillab/cloud-mail" alt="forks" />
+        <a href="https://github.com/postlite/postlite/forks" target="_blank" >
+            <img src="https://img.shields.io/github/forks/postlite/postlite" alt="forks" />
         </a>
     </p>
     <p align="center">
@@ -30,7 +30,7 @@
 </p>
 
 ## Description
-With only one domain, you can create multiple different email addresses, similar to major email platforms. This project can be deployed on Cloudflare Workers to reduce server costs and build your own email service.
+With only one domain, you can create multiple different email addresses, similar to major email platforms. This project can be deployed on 自建 VPS 服务 to reduce server costs and build your own email service.
 ## Project Showcase
 
 - [Live Demo](https://skymail.ink)<br>
@@ -43,7 +43,7 @@ With only one domain, you can create multiple different email addresses, similar
 
 ## Features
 
-- **💰 Low-Cost Usage**: No server required — deploy to Cloudflare Workers to reduce costs.
+- **💰 Low-Cost Usage**: No server required — deploy to 自建 VPS 服务 to reduce costs.
 
 - **💻 Responsive Design**: Automatically adapts to both desktop and most mobile browsers.
 
@@ -51,7 +51,7 @@ With only one domain, you can create multiple different email addresses, similar
 
 - **🛡️ Admin Features**: Admin controls for user and email management with RBAC-based access control.
 
-- **📦 Attachment Support**: Send and receive attachments, stored and downloaded via R2 object storage.
+- **📦 Attachment Support**: Send and receive attachments, stored and downloaded via internal object storage.
 
 - **🔔 Email Push**: Forward received emails to Telegram bots or other email providers.
 
@@ -67,7 +67,7 @@ With only one domain, you can create multiple different email addresses, similar
 
 ## Tech Stack
 
-- **Platform**: [Cloudflare Workers](https://developers.cloudflare.com/workers/)
+- **Platform**: [自建 VPS 服务](https://developers.cloudflare.com/workers/)
 
 - **Web Framework**: [Hono](https://hono.dev/)
 
@@ -79,16 +79,16 @@ With only one domain, you can create multiple different email addresses, similar
 
 - **Email Service**: [Resend](https://resend.com/)
 
-- **Cache**: [Cloudflare KV](https://developers.cloudflare.com/kv/)
+- **Cache**: [内部缓存](https://developers.cloudflare.com/kv/)
 
-- **Database**: [Cloudflare D1](https://developers.cloudflare.com/d1/)
+- **Database**: [内部数据库](https://developers.cloudflare.com/d1/)
 
-- **File Storage**: [Cloudflare R2](https://developers.cloudflare.com/r2/)
+- **File Storage**: [内部对象存储](https://developers.cloudflare.com/r2/)
 
 ## Project Structure
 
 ```
-cloud-mail
+postlite
 ├── mail-worker				    # Backend worker project
 │   ├── src                  
 │   │   ├── api	 			    # API layer

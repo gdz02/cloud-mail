@@ -1,25 +1,25 @@
 <p align="center">
     <img src="doc/demo/logo.png" width="80px" />
-    <h1 align="center">Cloud Mail</h1>
-    <p align="center">基于 Cloudflare 的简约响应式邮箱服务，支持邮件发送、附件收发 🎉</p> 
+    <h1 align="center">PostLite</h1>
+    <p align="center">团队打造的高效邮件系统，支持邮件发送、附件收发 🎉</p> 
     <p align="center">
         简体中文 | <a href="/README-en.md" style="margin-left: 5px">English </a>
     </p>
     <p align="center">
-        <a href="https://github.com/maillab/cloud-mail/tree/main?tab=MIT-1-ov-file" target="_blank" >
+        <a href="https://github.com/postlite/postlite/tree/main?tab=MIT-1-ov-file" target="_blank" >
             <img src="https://img.shields.io/badge/license-MIT-green" />
         </a>    
-        <a href="https://github.com/maillab/cloud-mail/releases" target="_blank" >
-            <img src="https://img.shields.io/github/v/release/maillab/cloud-mail" alt="releases" />
+        <a href="https://github.com/postlite/postlite/releases" target="_blank" >
+            <img src="https://img.shields.io/github/v/release/postlite/postlite" alt="releases" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/issues" >
-            <img src="https://img.shields.io/github/issues/maillab/cloud-mail" alt="issues" />
+        <a href="https://github.com/postlite/postlite/issues" >
+            <img src="https://img.shields.io/github/issues/postlite/postlite" alt="issues" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/stargazers" target="_blank">
-            <img src="https://img.shields.io/github/stars/maillab/cloud-mail" alt="stargazers" />
+        <a href="https://github.com/postlite/postlite/stargazers" target="_blank">
+            <img src="https://img.shields.io/github/stars/postlite/postlite" alt="stargazers" />
         </a>  
-        <a href="https://github.com/maillab/cloud-mail/forks" target="_blank" >
-            <img src="https://img.shields.io/github/forks/maillab/cloud-mail" alt="forks" />
+        <a href="https://github.com/postlite/postlite/forks" target="_blank" >
+            <img src="https://img.shields.io/github/forks/postlite/postlite" alt="forks" />
         </a>
     </p>
     <p align="center">
@@ -32,7 +32,7 @@
 
 ## 项目简介
 
-只需要一个域名，就可以创建多个不同的邮箱，类似各大邮箱平台，本项目支持署到 Cloudflare Workers ，降低服务器成本，搭建自己的邮箱服务
+只需要一个域名，就可以创建多个不同的邮箱，类似各大邮箱平台，本项目支持署到 自建 VPS 服务 ，降低服务器成本，搭建自己的邮箱服务
 
 ## 项目展示
 
@@ -48,7 +48,7 @@
 
 ## 功能介绍
 
-- **💰 低成本使用**： 可部署到 Cloudflare Workers 降低服务器成本
+- **💰 低成本使用**： 可部署到 自建 VPS 服务 降低服务器成本
 
 - **💻 响应式设计**：响应式布局自动适配PC和大部分手机端浏览器
 
@@ -56,7 +56,7 @@
 
 - **🛡️ 管理员功能**：可以对用户，邮件进行管理，RABC权限控制对功能及使用资源限制
 
-- **📦 附件收发**：支持收发附件，使用R2对象存储保存和下载文件
+- **📦 附件收发**：支持收发附件，使用内部对象存储保存和下载文件
 
 - **🔔 邮件推送**：接收邮件后可以转发到TG机器人或其他服务商邮箱
 
@@ -74,7 +74,7 @@
 
 ## 技术栈
 
-- **平台**：[Cloudflare Workers](https://developers.cloudflare.com/workers/)
+- **平台**：[自建 VPS 服务](https://developers.cloudflare.com/workers/)
 
 - **Web框架**：[Hono](https://hono.dev/)
 
@@ -86,16 +86,16 @@
 
 - **邮件推送：** [Resend](https://resend.com/)
 
-- **缓存**：[Cloudflare KV](https://developers.cloudflare.com/kv/)
+- **缓存**：[内部缓存](https://developers.cloudflare.com/kv/)
 
-- **数据库**：[Cloudflare D1](https://developers.cloudflare.com/d1/)
+- **数据库**：[内部数据库](https://developers.cloudflare.com/d1/)
 
-- **文件存储**：[Cloudflare R2](https://developers.cloudflare.com/r2/)
+- **文件存储**：[内部对象存储](https://developers.cloudflare.com/r2/)
 
 ## 目录结构
 
 ```
-cloud-mail
+postlite
 ├── mail-worker				    # worker后端项目
 │   ├── src                  
 │   │   ├── api	 			    # api接口层			
