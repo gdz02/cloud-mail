@@ -1,7 +1,7 @@
 <p align="center">
     <img src="doc/demo/logo.png" width="80px" />
     <h1 align="center">PostLite</h1>
-    <p align="center">团队打造的高效邮件系统，支持邮件发送、附件收发 🎉</p> 
+    <p align="center">为团队打造的高性能轻量邮件系统，支持邮件发送、附件收发，适配 Linux 🎉</p> 
     <p align="center">
         简体中文 | <a href="/README-en.md" style="margin-left: 5px">English </a>
     </p>
@@ -32,7 +32,7 @@
 
 ## 项目简介
 
-只需要一个域名，就可以创建多个不同的邮箱，类似各大邮箱平台，本项目支持署到 自建 VPS 服务 ，降低服务器成本，搭建自己的邮箱服务
+只需要一个域名，就可以创建多个不同的邮箱，类似各大邮箱平台。PostLite 专注高性能与轻量化体验，适配 Linux 服务器部署，帮助团队快速搭建稳定邮件系统。
 
 ## 项目展示
 
@@ -48,7 +48,7 @@
 
 ## 功能介绍
 
-- **💰 低成本使用**： 可部署到 自建 VPS 服务 降低服务器成本
+- **💰 低成本使用**：可部署在 Linux 服务器，降低团队运维与资源成本
 
 - **💻 响应式设计**：响应式布局自动适配PC和大部分手机端浏览器
 
@@ -74,7 +74,7 @@
 
 ## 技术栈
 
-- **平台**：[自建 VPS 服务](https://developers.cloudflare.com/workers/)
+- **平台**：Linux 服务器（物理机 / 虚拟机 / 云主机）
 
 - **Web框架**：[Hono](https://hono.dev/)
 
@@ -86,11 +86,11 @@
 
 - **邮件推送：** [Resend](https://resend.com/)
 
-- **缓存**：[内部缓存](https://developers.cloudflare.com/kv/)
+- **缓存**：内置缓存模块
 
-- **数据库**：[内部数据库](https://developers.cloudflare.com/d1/)
+- **数据库**：内置数据库模块
 
-- **文件存储**：[内部对象存储](https://developers.cloudflare.com/r2/)
+- **文件存储**：内置对象存储模块
 
 ## 目录结构
 
