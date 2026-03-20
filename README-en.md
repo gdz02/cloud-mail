@@ -1,7 +1,7 @@
 <p align="center">
     <img src="doc/demo/logo.png" width="80px" />
     <h1 align="center">PostLite</h1>
-    <p align="center">An efficient email system crafted by the team, supporting sending and receiving emails 🎉</p> 
+    <p align="center">A high-performance lightweight mail system built for teams, with full send/receive workflow and Linux readiness 🎉</p> 
     <p align="center">
        <a href="/README.md" style="margin-left: 5px">简体中文</a> | English 
     </p>
@@ -30,7 +30,7 @@
 </p>
 
 ## Description
-With only one domain, you can create multiple different email addresses, similar to major email platforms. This project can be deployed on 自建 VPS 服务 to reduce server costs and build your own email service.
+With one domain, you can create multiple email addresses like mainstream mail platforms. PostLite focuses on high performance and lightweight operations, and is ready for Linux server deployments for team use.
 ## Project Showcase
 
 - [Live Demo](https://skymail.ink)<br>
@@ -43,7 +43,7 @@ With only one domain, you can create multiple different email addresses, similar
 
 ## Features
 
-- **💰 Low-Cost Usage**: No server required — deploy to 自建 VPS 服务 to reduce costs.
+- **💰 Low-Cost Usage**: Deploy on Linux servers to reduce team infrastructure and maintenance costs.
 
 - **💻 Responsive Design**: Automatically adapts to both desktop and most mobile browsers.
 
@@ -67,7 +67,7 @@ With only one domain, you can create multiple different email addresses, similar
 
 ## Tech Stack
 
-- **Platform**: [自建 VPS 服务](https://developers.cloudflare.com/workers/)
+- **Platform**: Linux servers (bare metal / VM / cloud instances)
 
 - **Web Framework**: [Hono](https://hono.dev/)
 
@@ -79,11 +79,11 @@ With only one domain, you can create multiple different email addresses, similar
 
 - **Email Service**: [Resend](https://resend.com/)
 
-- **Cache**: [内部缓存](https://developers.cloudflare.com/kv/)
+- **Cache**: Built-in cache module
 
-- **Database**: [内部数据库](https://developers.cloudflare.com/d1/)
+- **Database**: Built-in database module
 
-- **File Storage**: [内部对象存储](https://developers.cloudflare.com/r2/)
+- **File Storage**: Built-in object storage module
 
 ## Project Structure
 
